@@ -1,0 +1,211 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6954,        201]
+NotebookOptionsPosition[      6652,        186]
+NotebookOutlinePosition[      7008,        202]
+CellTagsIndexPosition[      6965,        199]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", "_", "*)"}], 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"\:632a", "[", "\:5de6", "]"}], "=", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"#", "//.", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"x___", ",", "1", ",", 
+             RowBox[{"a_", "/;", 
+              RowBox[{"a", ">", "1"}]}], ",", "y___"}], "}"}], 
+           "\[RuleDelayed]", 
+           RowBox[{"{", 
+            RowBox[{"x", ",", "a", ",", "1", ",", "y"}], "}"}]}], ",", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"x___", ",", 
+             RowBox[{"a_", "/;", 
+              RowBox[{"a", ">", "1"}]}], ",", "a_", ",", "y___"}], "}"}], 
+           "\[RuleDelayed]", 
+           RowBox[{"{", 
+            RowBox[{"x", ",", 
+             RowBox[{"2", " ", 
+              RowBox[{"\:6293\:4f4f", "[", "a", "]"}]}], ",", "1", ",", "y"}],
+             "}"}]}]}], "}"}]}], "/.", 
+       RowBox[{
+        RowBox[{"\:6293\:4f4f", "[", "a_", "]"}], "\[RuleDelayed]", "a"}]}], 
+      "&"}]}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"\:632a", "[", "\:4e0a", "]"}], "=", 
+     RowBox[{"Composition", "[", 
+      RowBox[{"Transpose", ",", 
+       RowBox[{"\:632a", "[", "\:5de6", "]"}], ",", "Transpose"}], "]"}]}], 
+    ";"}], "\n", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"\:632a", "[", "\:4e0b", "]"}], "=", 
+     RowBox[{"Composition", "[", 
+      RowBox[{"Reverse", ",", 
+       RowBox[{"\:632a", "[", "\:4e0a", "]"}], ",", "Reverse"}], "]"}]}], 
+    ";"}], "\n", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"\:632a", "[", "\:53f3", "]"}], "=", 
+     RowBox[{"Composition", "[", 
+      RowBox[{"Transpose", ",", 
+       RowBox[{"\:632a", "[", "\:4e0b", "]"}], ",", "Transpose"}], "]"}]}], 
+    ";"}], "\n", 
+   RowBox[{
+    RowBox[{"\:52a0\:5757\:74e6", "=", 
+     RowBox[{
+      RowBox[{"ReplacePart", "[", 
+       RowBox[{"#", ",", 
+        RowBox[{
+         RowBox[{"RandomChoice", "@", 
+          RowBox[{"Position", "[", 
+           RowBox[{"#", ",", "1"}], "]"}]}], "\[Rule]", "2"}]}], "]"}], 
+      "&"}]}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"\:6309\:952e", "=", 
+     RowBox[{
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{"\:683c\:5b50", "\[NotEqual]", 
+         RowBox[{
+          RowBox[{"\:632a", "[", "#", "]"}], "[", "\:683c\:5b50", "]"}]}], 
+        ",", 
+        RowBox[{
+         RowBox[{"\:683c\:5b50", "=", 
+          RowBox[{"\:52a0\:5757\:74e6", "[", 
+           RowBox[{
+            RowBox[{"\:632a", "[", "#", "]"}], "[", "\:683c\:5b50", "]"}], 
+           "]"}]}], ";", "\[IndentingNewLine]", 
+         RowBox[{"Which", "[", 
+          RowBox[{
+           RowBox[{"And", "@@", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"\:683c\:5b50", "\[Equal]", 
+                RowBox[{
+                 RowBox[{"\:632a", "[", "#", "]"}], "[", "\:683c\:5b50", 
+                 "]"}]}], "&"}], "/@", 
+              RowBox[{"{", 
+               RowBox[{
+               "\:5de6", ",", "\:53f3", ",", "\:4e0a", ",", "\:4e0b"}], 
+               "}"}]}], ")"}]}], ",", 
+           RowBox[{
+           "\:72b6\:6001", "=", 
+            "\"\<\:545c\[Ellipsis]\[Ellipsis]\:52a8\:4e0d\:4e86\:4e86\
+\[Ellipsis]\[Ellipsis]\>\""}], ",", 
+           RowBox[{"!", 
+            RowBox[{"FreeQ", "[", 
+             RowBox[{"\:683c\:5b50", ",", "2048"}], "]"}]}], ",", 
+           RowBox[{"\:72b6\:6001", "=", "\"\<2048\:ff01\>\""}]}], "]"}]}]}], 
+       "]"}], "&"}]}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"\:683c\:5b50", "=", 
+     RowBox[{"\:52a0\:5757\:74e6", "[", 
+      RowBox[{"ConstantArray", "[", 
+       RowBox[{"1", ",", 
+        RowBox[{"{", 
+         RowBox[{"4", ",", "4"}], "}"}]}], "]"}], "]"}]}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"\:72b6\:6001", "=", "\"\<\>\""}], ";"}], "\n", 
+   RowBox[{"EventHandler", "[", 
+    RowBox[{
+     RowBox[{"Dynamic", "[", 
+      RowBox[{"ArrayPlot", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Log2", "@", "\:683c\:5b50"}], "/", "11"}], ",", 
+        RowBox[{"ColorFunction", "\[Rule]", "\"\<StarryNightColors\>\""}], 
+        ",", 
+        RowBox[{"ColorFunctionScaling", "\[Rule]", "False"}], ",", 
+        RowBox[{"Mesh", "\[Rule]", "All"}], ",", 
+        RowBox[{"Epilog", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"MapIndexed", "[", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"Text", "[", 
+               RowBox[{
+                RowBox[{"If", "[", 
+                 RowBox[{
+                  RowBox[{"#1", "\[Equal]", "1"}], ",", "\"\<\>\"", ",", 
+                  RowBox[{"Style", "[", 
+                   RowBox[{"#1", ",", "\"\<Section\>\""}], "]"}]}], "]"}], 
+                ",", 
+                RowBox[{"#2", "-", 
+                 RowBox[{"{", 
+                  RowBox[{"0.5", ",", "0.5"}], "}"}]}]}], "]"}], "&"}], ",", 
+             RowBox[{"Transpose", "@", 
+              RowBox[{"Reverse", "@", "\:683c\:5b50"}]}], ",", 
+             RowBox[{"{", "2", "}"}]}], "]"}], ",", 
+           RowBox[{"Text", "[", 
+            RowBox[{
+             RowBox[{"Style", "[", 
+              RowBox[{"\:72b6\:6001", ",", "\"\<Section\>\""}], "]"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"2", ",", "2"}], "}"}]}], "]"}]}], "}"}]}]}], "]"}], 
+      "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"\"\<LeftArrowKeyDown\>\"", "\[RuleDelayed]", 
+        RowBox[{"\:6309\:952e", "[", "\:5de6", "]"}]}], ",", 
+       RowBox[{"\"\<RightArrowKeyDown\>\"", "\[RuleDelayed]", 
+        RowBox[{"\:6309\:952e", "[", "\:53f3", "]"}]}], ",", 
+       RowBox[{"\"\<UpArrowKeyDown\>\"", "\[RuleDelayed]", 
+        RowBox[{"\:6309\:952e", "[", "\:4e0a", "]"}]}], ",", 
+       RowBox[{"\"\<DownArrowKeyDown\>\"", "\[RuleDelayed]", 
+        RowBox[{"\:6309\:952e", "[", "\:4e0b", "]"}]}]}], "}"}]}], 
+    "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.668701562860073*^9, 3.668701562862875*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.668701594840411*^9, 3.668701596728058*^9}}]
+},
+WindowSize->{808, 602},
+WindowMargins->{{4, Automatic}, {Automatic, 4}},
+FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (September 9, \
+2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 5995, 161, 419, "Input"],
+Cell[6556, 183, 92, 1, 28, InheritFromParent]
+}
+]
+*)
+
+(* End of internal cache information *)
+
